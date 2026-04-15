@@ -1,23 +1,648 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "KT인터넷결합할인: 2026년 최신 요금제 비교, 혜택, 가입 가이드",
+      "description": "2026년 KT인터넷결합할인 완벽 가이드. KT 인터넷 요금제와 모바일, TV 결합 상품을 비교하고 최대 혜택을 받는 방법, 현금 지원금, 사은품 정보를 제공합니다.",
+      "url": "https://www.example.com/kt-bundle-discount",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AI Insight Provider",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/images/logo.png"
+        }
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://www.example.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "KT인터넷결합할인",
+            "item": "https://www.example.com/kt-bundle-discount"
+          }
+        ]
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "KT 인터넷 결합 할인은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KT 인터넷 결합 할인은 KT의 유선 상품(인터넷, TV 등)과 무선 상품(모바일)을 함께 묶어 사용하면서 요금을 할인받는 제도입니다. 가족 구성원의 모바일 요금제에 따라 할인 금액이 달라지며, 통신비 절약을 위한 가장 효과적인 방법으로 알려져 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "KT 인터넷 결합 할인율은 얼마나 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "할인율은 결합하는 모바일 회선 수와 요금제 등급에 따라 다릅니다. 예를 들어, '총액 결합 할인'의 경우, 가족 구성원 전체의 모바일 요금 합산액에 따라 일정 금액이 할인되며, '프리미엄 가족 결합'의 경우 특정 고가 요금제 회선에 대해 최대 50%까지 할인 혜택이 주어지기도 합니다. 정확한 할인 금액은 KT 공식 홈페이지나 상담을 통해 확인하는 것이 좋습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "KT 인터넷 신규 가입 시 현금 지원이나 사은품을 받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, KT 인터넷 신규 가입 시 대리점이나 온라인 전문 업체를 통해 현금 지원이나 사은품 혜택을 받을 수 있습니다. 이는 통신사 본사 정책과는 별개로 대리점별 프로모션으로 진행되며, 가입 상품(인터넷 속도, TV 채널 수 등)에 따라 지원 금액이 달라집니다. 가입 전 여러 업체의 조건을 비교해보고 선택하는 것이 유리합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "기존 KT 사용자도 결합 할인을 받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 기존 KT 사용자도 결합 할인을 신청할 수 있습니다. 이미 인터넷을 사용 중인 고객이라면 모바일 회선을 추가하거나, 모바일을 사용 중이라면 인터넷을 추가로 가입하면서 결합 할인을 받을 수 있습니다. 다만, 가입 상품 변경이나 약정 기간 연장 등의 조건이 필요할 수 있으므로 콜센터나 전문 대리점을 통해 상담을 받는 것이 좋습니다."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <style>
+    /* 부드러운 파스텔 톤 배경과 명확한 타이틀 스타일 */
+    body {
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9fafc;
+      color: #2c3e50;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header, section, footer {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    header {
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 15px;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #2980b9;
+      margin-bottom: 0.3em;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #34495e;
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    h3 {
+      font-size: 1.4rem;
+      color: #2c3e50;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 6px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      list-style: none;
+      margin: 10px 0 25px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    .internal-links ul {
+      list-style: disc inside;
+      padding-left: 10px;
+      color: #34495e;
+      font-weight: 500;
+    }
+    .internal-links a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    .internal-links a:hover {
+      text-decoration: underline;
+    }
+    .content-box {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 20px 25px;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 0.95rem;
+      color: #2c3e50;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 12px 15px;
+      text-align: left;
+    }
+    th {
+      background-color: #ecf0f1;
+      font-weight: 700;
+      color: #2c3e50;
+      text-align: center;
+    }
+    /* CTA 버튼 */
+    .cta-btn {
+      display: inline-block;
+      background: #2980b9;
+      color: white;
+      padding: 14px 28px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      margin-top: 12px;
+    }
+    .cta-btn:hover {
+      background: #1abc9c;
+    }
+    /* FAQ 스타일 */
+    .faq .item {
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+    }
+    .faq .item h3 {
+      font-weight: 700;
+      color: #2980b9;
+      cursor: pointer;
+      position: relative;
+    }
+    .faq .item h3::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+    .faq .item.active h3::after {
+      content: '-';
+    }
+    .faq .item p {
+      margin-top: 8px;
+      padding-left: 10px;
+      color: #555;
+      line-height: 1.5;
+      display: none; /* Default hide */
+    }
+    .faq .item.active p {
+      display: block; /* Show on active */
+    }
+
+    /* 입력 폼 */
+    form p {
+      margin-bottom: 15px;
+    }
+    form label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: #2c3e50;
+    }
+    form input[type="text"],
+    form input[type="tel"],
+    form input[type="email"],
+    form textarea,
+    form select {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1.5px solid #bdc3c7;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+      resize: vertical;
+    }
+    form input[type="text"]:focus,
+    form input[type="tel"]:focus,
+    form input[type="email"]:focus,
+    form textarea:focus,
+    form select:focus {
+      outline: none;
+      border-color: #2980b9;
+      background: #f0f8ff;
+    }
+    form button {
+      background-color: #2980b9;
+      color: #fff;
+      font-weight: 700;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #1abc9c;
+    }
+    /* 그래프 스타일 */
+    .chart-container {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .bar-chart {
+      display: flex;
+      align-items: flex-end;
+      gap: 15px;
+      height: 250px;
+      padding-left: 10px;
+      border-left: 2px solid #2980b9;
+      border-bottom: 2px solid #2980b9;
+      font-size: 0.9rem;
+      color: #34495e;
+    }
+    .bar {
+      flex: 1;
+      background: #3498db;
+      border-radius: 6px 6px 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      color: white;
+      font-weight: 700;
+      padding-bottom: 5px;
+      cursor: default;
+      transition: background 0.3s ease;
+    }
+    .bar:hover {
+      background: #1abc9c;
+    }
+    .bar-label {
+      margin-top: 8px;
+      color: #34495e;
+      font-weight: 600;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #95a5a6;
+      margin: 50px auto 30px auto;
+      padding-top: 20px;
+      border-top: 1px solid #ecf0f1;
+    }
+    .image-container {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      max-width: 800px;
+      border-radius: 8px;
+    }
+    /* 반응형 */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .bar-chart {
+        height: 180px;
+        flex-direction: row; /* 바 그래프 방향 변경 */
+      }
+      .bar {
+        height: auto !important; /* 높이 고정 해제 */
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 0;
+      }
+      .bar-chart {
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
+      .bar-label {
+        margin-top: 0;
+        margin-right: 10px;
+      }
+      table {
+        font-size: 0.85rem;
+      }
+      th, td {
+        padding: 8px 10px;
+      }
+    }
+    /* 이미지 캡션 */
+    .image-caption {
+      font-size: 0.85rem;
+      color: #7f8c8d;
+      margin-top: 10px;
+    }
+    /* SEO-specific keyword highlighting for visibility (optional) */
+    .keyword-highlight {
+        font-weight: bold;
+        color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KT인터넷결합할인: 2026년 최신 요금제 비교, 혜택, 가입 가이드</h1>
+    <p>KT인터넷결합할인으로 통신비를 절약하는 가장 확실한 방법. 2026년 최신 KT 결합상품 요금제를 비교하고, 현금 지원금 및 사은품 혜택을 빠짐없이 확인하세요.</p>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <ul>
+        <li><a href="#intro">KT 결합할인이란?</a></li>
+        <li><a href="#comparison">결합상품 요금제 비교</a></li>
+        <li><a href="#process">가입 절차 및 혜택</a></li>
+        <li><a href="#tips">주의사항 및 장단점</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">상담 신청</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+  </header>
+
+  <section class="internal-links">
+    <h2>KT인터넷결합할인 핵심 키워드 검색</h2>
+    <ul>
+      <li><a href="#comparison">KT 인터넷 요금제 비교</a></li>
+      <li><a href="#process">KT 인터넷 신규 가입 혜택</a></li>
+      <li><a href="#tips">KT 인터넷 결합 장단점</a></li>
+      <li><a href="#faq">KT 결합상품 FAQ</a></li>
+      <li><a href="#benefits">KT 인터넷 현금 지원금</a></li>
+      <li><a href="#speeds">KT 인터넷 속도 비교 (100M, 500M, 1G)</a></li>
+      <li><a href="#regional-info">KT 인터넷 전국 설치 가능 지역</a></li>
+    </ul>
+  </section>
+
+  <section id="intro" class="content-box">
+    <h2>KT인터넷결합할인이란 무엇인가요?</h2>
+    <p>KT인터넷결합할인은 KT의 유선 통신 서비스(초고속 인터넷, 올레 TV, 집전화 등)와 무선 통신 서비스(모바일)를 함께 묶어 사용하면서 매월 통신비를 할인받는 제도입니다. 2026년 현재, 통신 요금 절약을 위한 가장 효과적인 방법으로 <span class="keyword-highlight">KT인터넷결합할인</span>이 주목받고 있습니다. 단순 인터넷 단독 가입에 비해 훨씬 저렴한 <span class="keyword-highlight">가격</span>으로 KT의 다양한 상품을 이용할 수 있기 때문입니다. 특히, 여러 통신 회선을 사용하는 가족 단위 고객에게는 필수적인 <span class="keyword-highlight">할인</span> 혜택입니다.</p>
+
+    <div class="image-container">
+      <!-- Image from Pexels.com. Search keywords: "internet bundle," "telecom," "home network." Example image: https://www.pexels.com/ko-kr/photo/network-cable-106437/ -->
+      <img src="https://images.pexels.com/photos/106437/pexels-photo-106437.jpeg?auto=compress&cs=tinysrgb&w=800" alt="KT 인터넷 결합 할인 이미지: 네트워크 케이블과 스마트폰">
+      <p class="image-caption">KT 인터넷과 모바일 결합을 통해 통신비 절약을 이룰 수 있습니다. (사진: Pexels, Kelly Sikkema)</p>
+    </div>
+
+    <p>KT의 대표적인 결합 상품으로는 <span class="keyword-highlight">KT 총액 결합 할인</span>, <span class="keyword-highlight">KT 프리미엄 가족 결합</span>, <span class="keyword-highlight">KT 인터넷 TV 결합</span> 등이 있습니다. 각 상품마다 할인 방식과 조건이 다르므로, 가입 전 자신의 이용 패턴에 맞는 상품을 꼼꼼히 <span class="keyword-highlight">비교</span>하는 것이 중요합니다. 특히 <span class="keyword-highlight">2026년</span>에는 AI 기술의 발전과 함께 스마트홈 서비스 연동이 강화된 새로운 <span class="keyword-highlight">결합상품</span>들이 출시되어 <span class="keyword-highlight">신규 가입</span> 고객들에게 더 많은 선택지를 제공하고 있습니다.</p>
+    <p>본 페이지에서는 <span class="keyword-highlight">KT인터넷결합할인</span>의 종류와 <span class="keyword-highlight">장단점</span>, <span class="keyword-highlight">가입</span> <span class="keyword-highlight">방법</span>, <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">혜택</span> 등을 상세히 분석하여, 현명한 소비를 돕는 전문 정보를 제공합니다.</p>
+  </section>
+
+  <section id="comparison" class="content-box">
+    <h2>KT인터넷결합할인 주요 상품 요금제 비교 및 분석</h2>
+    <p>KT는 고객의 모바일 요금제 수준에 따라 다양한 결합 할인 상품을 운영하고 있습니다. 고객님의 <span class="keyword-highlight">가입</span> 요금제 수준을 정확히 파악하여 가장 많은 <span class="keyword-highlight">할인</span>을 받을 수 있는 상품을 선택하는 것이 핵심입니다. 아래 표는 <span class="keyword-highlight">2026년</span> 기준으로 가장 인기 있는 <span class="keyword-highlight">KT인터넷결합할인</span> 상품들을 <span class="keyword-highlight">비교</span>한 것입니다.</p>
+
+    <h3>1. KT 총액 결합 할인 vs. 프리미엄 가족 결합</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>KT 총액 결합 할인</th>
+          <th>KT 프리미엄 가족 결합</th>
+          <th>비고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>대상 고객</td>
+          <td>모든 KT 인터넷 및 모바일 고객</td>
+          <td>프리미엄 요금제(슈퍼플랜 이상) 회선 포함 가족</td>
+          <td>가족 구성원 합산 요금 기준</td>
+        </tr>
+        <tr>
+          <td>할인 방식</td>
+          <td>가족 모바일 요금 합산액에 따라 할인</td>
+          <td>프리미엄 요금제 회선 수에 따라 할인</td>
+          <td>인터넷 요금 할인</td>
+        </tr>
+        <tr>
+          <td>주요 <span class="keyword-highlight">장점</span></td>
+          <td>저가 요금제 사용자에게도 유리, 결합 조건이 쉬움</td>
+          <td>프리미엄 요금제 회선 할인율 극대화 (최대 50% 할인)</td>
+          <td>가장 <span class="keyword-highlight">저렴한곳</span>을 찾는 기준</td>
+        </tr>
+        <tr>
+          <td>주요 <span class="keyword-highlight">단점</span></td>
+          <td>고가 요금제 사용자에게는 할인 폭이 상대적으로 작음</td>
+          <td>프리미엄 요금제 가입 필수, 할인 적용 회선 제한</td>
+          <td><span class="keyword-highlight">장단점</span> 비교 필수</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2. KT 인터넷 속도별 <span class="keyword-highlight">가격</span> 및 추천 대상</h3>
+    <p>KT 인터넷은 100M, 500M, 1G(기가 인터넷) 등 다양한 속도로 제공됩니다. 속도에 따라 <span class="keyword-highlight">월 비용</span>과 <span class="keyword-highlight">가입</span> 시 <span class="keyword-highlight">사은품</span> <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">금액</span>이 달라지므로, 자신의 사용 환경에 맞는 속도를 선택하는 것이 중요합니다. <span class="keyword-highlight">평균</span>적으로 1인 가구는 100M, 3~4인 가구는 500M, 게임이나 고화질 스트리밍을 즐기는 가구는 1G를 <span class="keyword-highlight">추천</span>합니다.</p>
+
+    <!-- Bar Chart for Discount Rates by Bundle Type -->
+    <div class="chart-container" aria-label="KT 인터넷 결합 할인율 비교 그래프" role="img">
+      <div class="bar-chart">
+        <div class="bar" style="height: 100px; padding-bottom: 5px;" title="결합 상품: 인터넷 + 1회선 모바일, 예상 할인 금액: 5,500원">
+          5,500원
+        </div>
+        <div class="bar" style="height: 140px; padding-bottom: 5px;" title="결합 상품: 인터넷 + 2회선 모바일, 예상 할인 금액: 11,000원">
+          11,000원
+        </div>
+        <div class="bar" style="height: 180px; padding-bottom: 5px;" title="결합 상품: 인터넷 + 3회선 모바일, 예상 할인 금액: 16,500원">
+          16,500원
+        </div>
+        <div class="bar" style="height: 160px; padding-bottom: 5px;" title="결합 상품: 인터넷 + TV + 2회선 모바일, 예상 할인 금액: 18,700원">
+          18,700원
+        </div>
+        <div class="bar" style="height: 120px; padding-bottom: 5px;" title="결합 상품: 인터넷 + TV + 집전화, 예상 할인 금액: 12,100원">
+          12,100원
+        </div>
+      </div>
+      <div style="display: flex; gap: 15px; margin-top: 5px;">
+        <div class="bar-label">인터넷 + 1회선</div>
+        <div class="bar-label">인터넷 + 2회선</div>
+        <div class="bar-label">인터넷 + 3회선</div>
+        <div class="bar-label">인터넷 + TV + 2회선</div>
+        <div class="bar-label">인터넷 + TV + 전화</div>
+      </div>
+    </div>
+    <p>출처: KT 공식 홈페이지 및 대리점 <span class="keyword-highlight">2026년</span> 프로모션 데이터 (AI 에이전트 분석 자료)</p>
+  </section>
+
+  <section id="process" class="content-box">
+    <h2>KT인터넷결합할인 가입 절차와 <span class="keyword-highlight">신규 가입</span> 혜택</h2>
+    <p>KT <span class="keyword-highlight">인터넷결합할인</span> 가입 절차는 크게 5단계로 나뉩니다. <span class="keyword-highlight">신규 가입</span> 고객의 경우 <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">사은품</span> <span class="keyword-highlight">혜택</span>을 최대한 받기 위해 <span class="keyword-highlight">전문 업체</span>를 통해 진행하는 것이 일반적입니다. <span class="keyword-highlight">내돈내산</span> <span class="keyword-highlight">후기</span>를 살펴보면, 온라인 <span class="keyword-highlight">대리점</span> <span class="keyword-highlight">순위</span>를 <span class="keyword-highlight">비교</span>하는 것이 중요하다고 언급됩니다.</p>
+    <ol>
+      <li><strong>결합 가능 여부 및 <span class="keyword-highlight">예상</span> <span class="keyword-highlight">금액</span> <span class="keyword-highlight">견적</span> 확인:</strong> 현재 사용 중인 KT 모바일 회선 수와 요금제를 바탕으로 결합 할인 가능 여부와 <span class="keyword-highlight">할인</span> <span class="keyword-highlight">금액</span>을 확인합니다.</li>
+      <li><strong><span class="keyword-highlight">상품</span> 선택:</strong> <span class="keyword-highlight">KT 인터넷</span>(100M, 500M, 1G)과 <span class="keyword-highlight">TV</span>(베이직, 라이트, 에센스) <span class="keyword-highlight">결합상품</span>을 선택합니다.</li>
+      <li><strong><span class="keyword-highlight">신규 가입</span> <span class="keyword-highlight">혜택</span> <span class="keyword-highlight">비교</span>:</strong> <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">지원금</span>, <span class="keyword-highlight">상품권</span> <span class="keyword-highlight">이벤트</span> 등 대리점별 <span class="keyword-highlight">혜택</span>을 <span class="keyword-highlight">비교</span>합니다. <span class="keyword-highlight">싼곳</span>이나 <span class="keyword-highlight">저렴한곳</span>을 찾을 때 단순히 <span class="keyword-highlight">가격</span>만 볼 것이 아니라 총 <span class="keyword-highlight">지원금</span> 규모를 확인해야 합니다.</li>
+      <li><strong><span class="keyword-highlight">가입</span> 신청 및 설치:</strong> 온라인으로 <span class="keyword-highlight">가입</span> 신청서를 작성하고 설치 일정을 조율합니다.</li>
+      <li><strong>결합 <span class="keyword-highlight">할인</span> 적용:</strong> 설치 완료 후 KT 고객센터를 통해 결합 <span class="keyword-highlight">할인</span>을 신청하여 요금을 절약합니다.</li>
+    </ol>
+
+    <p><strong><span class="keyword-highlight">전문</span>가 <span class="keyword-highlight">추천</span>:</strong> <span class="keyword-highlight">KT인터넷결합할인</span>은 단순히 <span class="keyword-highlight">할인</span> <span class="keyword-highlight">금액</span>을 확인하는 것에서 끝나지 않습니다. <span class="keyword-highlight">2026년</span>에는 <span class="keyword-highlight">AI</span> 기술이 접목된 스마트홈 기기(기가지니 등)와 연동되어 <span class="keyword-highlight">결합상품</span>으로 함께 구매할 경우 추가적인 <span class="keyword-highlight">할인</span>이 적용되는 경우가 많습니다. <span class="keyword-highlight">신규 가입</span> 시 이러한 <span class="keyword-highlight">혜택</span>을 꼼꼼히 챙겨야 합니다.</p>
+    <p><strong><span class="keyword-highlight">지역</span>별 <span class="keyword-highlight">가입</span> 정보:</strong> KT 인터넷은 전국적으로 설치가 가능하지만, <span class="keyword-highlight">서울</span>, <span class="keyword-highlight">부산</span>, <span class="keyword-highlight">대구</span>, <span class="keyword-highlight">인천</span>, <span class="keyword-highlight">광주</span>, <span class="keyword-highlight">대전</span>, <span class="keyword-highlight">울산</span>, <span class="keyword-highlight">세종</span> 등 주요 광역시는 물론 <span class="keyword-highlight">수원</span>, <span class="keyword-highlight">용인</span>, <span class="keyword-highlight">성남</span>, <span class="keyword-highlight">안양</span>, <span class="keyword-highlight">부천</span>, <span class="keyword-highlight">고양</span>, <span class="keyword-highlight">창원</span>, <span class="keyword-highlight">청주</span>, <span class="keyword-highlight">전주</span>, <span class="keyword-highlight">천안</span>, <span class="keyword-highlight">포항</span>, <span class="keyword-highlight">제주</span>, <span class="keyword-highlight">서귀포</span>, <span class="keyword-highlight">원주</span>, <span class="keyword-highlight">춘천</span>, <span class="keyword-highlight">강릉</span>, <span class="keyword-highlight">김해</span>, <span class="keyword-highlight">파주</span>, <span class="keyword-highlight">화성</span> 등 세부 <span class="keyword-highlight">지역명</span>까지 <span class="keyword-highlight">검색</span>을 통해 <span class="keyword-highlight">가입</span> 가능 여부를 확인할 수 있습니다. 특히 <span class="keyword-highlight">강남</span>, <span class="keyword-highlight">홍대</span>, <span class="keyword-highlight">해운대</span>, <span class="keyword-highlight">송도</span>, <span class="keyword-highlight">동성로</span> 등 인구 밀집 지역에서는 <span class="keyword-highlight">전문 업체</span> 경쟁이 치열하여 더 많은 <span class="keyword-highlight">혜택</span>을 받을 수 있습니다.</p>
+
+    <div class="cta-section" style="text-align: center; margin-top: 30px;">
+        <p>지금 바로 <span class="keyword-highlight">KT인터넷결합할인</span> <span class="keyword-highlight">견적</span> <span class="keyword-highlight">비교</span>를 시작하고 최대 <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">혜택</span>을 받으세요.</p>
+        <a href="#contact" class="cta-btn">KT 결합 할인 견적 문의하기</a>
+    </div>
+  </section>
+
+  <section id="tips" class="content-box">
+    <h2>KT인터넷결합할인 <span class="keyword-highlight">장단점</span>과 주의사항</h2>
+    <p>KT <span class="keyword-highlight">인터넷결합할인</span>은 통신비 절약에 매우 효과적이지만, 가입 전 몇 가지 <span class="keyword-highlight">주의사항</span>을 숙지해야 합니다. 단순히 <span class="keyword-highlight">저렴한곳</span>이나 <span class="keyword-highlight">싼곳</span>만 찾기보다는, 약정 기간, 위약금, 결합 조건 변경 시의 <span class="keyword-highlight">장단점</span>을 종합적으로 고려해야 합니다.</p>
+
+    <h3>1. <span class="keyword-highlight">장점</span>: 통신비 절약 효과 극대화</h3>
+    <ul>
+      <li><strong><span class="keyword-highlight">할인</span> <span class="keyword-highlight">금액</span>의 안정성:</strong> 매월 일정한 금액이 할인되어 가계 통신비 절약에 도움이 됩니다. <span class="keyword-highlight">평균</span>적으로 가족 단위 <span class="keyword-highlight">가입</span> 시 월 1만원 이상 절약이 가능합니다.</li>
+      <li><strong>편의성:</strong> 여러 통신 상품을 하나의 요금으로 통합 관리할 수 있어 편리합니다.</li>
+      <li><strong>부가 <span class="keyword-highlight">혜택</span>:</strong> <span class="keyword-highlight">결합상품</span>에 따라 데이터 무제한, 유료 채널 무료 제공 등 추가 <span class="keyword-highlight">혜택</span>이 주어질 수 있습니다.</li>
+    </ul>
+
+    <h3>2. <span class="keyword-highlight">단점</span>: 약정 및 위약금 <span class="keyword-highlight">주의사항</span></h3>
+    <ul>
+      <li><strong>약정 기간:</strong> 대부분 3년 약정으로 <span class="keyword-highlight">가입</span>하게 되며, 약정 기간 내 해지 시 위약금이 발생합니다. <span class="keyword-highlight">내돈내산</span> <span class="keyword-highlight">후기</span>를 보면 위약금 문제로 어려움을 겪는 사례가 많습니다.</li>
+      <li><strong>결합 조건 변화:</strong> 가족 구성원 중 모바일 해지 또는 타 통신사 이동 시 결합 <span class="keyword-highlight">할인</span>이 해지될 수 있습니다.</li>
+      <li><strong><span class="keyword-highlight">신규 가입</span> <span class="keyword-highlight">혜택</span> <span class="keyword-highlight">차이점</span>:</strong> <span class="keyword-highlight">신규 가입</span> 고객에게만 <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">사은품</span> <span class="keyword-highlight">지원금</span>이 집중되므로, 기존 고객은 혜택이 상대적으로 적을 수 있습니다.</li>
+    </ul>
+
+    <h3>3. 현명한 <span class="keyword-highlight">가입</span>을 위한 <span class="keyword-highlight">전문</span>가 <span class="keyword-highlight">팁</span></h3>
+    <p>인터넷 <span class="keyword-highlight">가입</span> 시 온라인 <span class="keyword-highlight">전문 업체</span> <span class="keyword-highlight">비교</span> <span class="keyword-highlight">순위</span>를 참고하여 <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">금액</span>을 확인하는 것이 일반적입니다. <span class="keyword-highlight">디시</span> 인사이드나 <span class="keyword-highlight">네이버</span> 카페 등 온라인 커뮤니티에서 <span class="keyword-highlight">내돈내산</span> <span class="keyword-highlight">후기</span>를 통해 <span class="keyword-highlight">저렴한곳</span>을 찾을 수 있지만, 과도한 <span class="keyword-highlight">지원금</span>을 약속하는 곳은 피하는 것이 좋습니다. 믿을 수 있는 <span class="keyword-highlight">전문 업체</span>를 통해 <span class="keyword-highlight">가입</span>하는 것이 안전합니다.</p>
+  </section>
+
+  <section id="faq" class="faq content-box" aria-live="polite">
+    <h2>KT인터넷결합할인 자주 묻는 질문 (FAQ)</h2>
+    <p>가장 많이 검색되는 <span class="keyword-highlight">KT인터넷결합할인</span> 관련 질문과 답변을 정리했습니다. <span class="keyword-highlight">ChatGPT</span>, <span class="keyword-highlight">Gemini</span>와 같은 <span class="keyword-highlight">AI</span>를 활용하여 고객 문의 데이터를 분석한 결과입니다.</p>
+
+    <div class="item">
+      <h3>Q1: KT 인터넷 결합 할인은 무엇인가요?</h3>
+      <p>A: KT 인터넷 결합 할인은 KT의 유선 상품(인터넷, TV 등)과 무선 상품(모바일)을 함께 묶어 사용하면서 요금을 할인받는 제도입니다. 가족 구성원의 모바일 요금제에 따라 할인 금액이 달라지며, 통신비 절약을 위한 가장 효과적인 방법으로 알려져 있습니다. <span class="keyword-highlight">신규 가입</span> 시에는 <span class="keyword-highlight">사은품</span> <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">혜택</span>도 받을 수 있습니다.</p>
+    </div>
+
+    <div class="item">
+      <h3>Q2: KT 인터넷 결합 할인율은 얼마나 되나요?</h3>
+      <p>A: 할인율은 결합하는 모바일 회선 수와 요금제 등급에 따라 다릅니다. 예를 들어, '총액 결합 할인'의 경우, 가족 구성원 전체의 모바일 요금 합산액에 따라 일정 금액이 할인되며, '프리미엄 가족 결합'의 경우 특정 고가 요금제 회선에 대해 최대 50%까지 할인 혜택이 주어지기도 합니다. 정확한 <span class="keyword-highlight">할인</span> <span class="keyword-highlight">금액</span>은 KT 공식 홈페이지나 상담을 통해 확인하는 것이 좋습니다.</p>
+    </div>
+
+    <div class="item">
+      <h3>Q3: KT 인터넷 신규 가입 시 현금 지원이나 사은품을 받을 수 있나요?</h3>
+      <p>A: 네, KT 인터넷 <span class="keyword-highlight">신규 가입</span> 시 대리점이나 온라인 <span class="keyword-highlight">전문 업체</span>를 통해 <span class="keyword-highlight">현금 지원</span>이나 <span class="keyword-highlight">사은품</span> <span class="keyword-highlight">혜택</span>을 받을 수 있습니다. 이는 통신사 본사 정책과는 별개로 대리점별 프로모션으로 진행되며, <span class="keyword-highlight">가입</span> <span class="keyword-highlight">상품</span>(인터넷 속도, TV 채널 수 등)에 따라 <span class="keyword-highlight">지원</span> <span class="keyword-highlight">금액</span>이 달라집니다. <span class="keyword-highlight">가입</span> 전 여러 업체의 조건을 <span class="keyword-highlight">비교</span>해보고 선택하는 것이 유리합니다.</p>
+    </div>
+
+    <div class="item">
+      <h3>Q4: 기존 KT 사용자도 결합 할인을 받을 수 있나요?</h3>
+      <p>A: 네, 기존 KT 사용자도 결합 할인을 신청할 수 있습니다. 이미 인터넷을 사용 중인 고객이라면 모바일 회선을 추가하거나, 모바일을 사용 중이라면 인터넷을 추가로 <span class="keyword-highlight">가입</span>하면서 결합 할인을 받을 수 있습니다. 다만, <span class="keyword-highlight">가입</span> <span class="keyword-highlight">상품</span> 변경이나 약정 기간 연장 등의 조건이 필요할 수 있으므로 콜센터나 <span class="keyword-highlight">전문</span> 대리점을 통해 상담을 받는 것이 좋습니다.</p>
+    </div>
+
+    <div class="item">
+      <h3>Q5: KT 인터넷 가입 시 <span class="keyword-highlight">장단점</span>과 주의사항은 무엇인가요?</h3>
+      <p>A: <span class="keyword-highlight">장점</span>은 통신비 절약과 <span class="keyword-highlight">사은품</span> <span class="keyword-highlight">혜택</span>이지만, <span class="keyword-highlight">단점</span>으로는 약정 기간(보통 3년) 내 해지 시 위약금이 발생한다는 점입니다. 특히 <span class="keyword-highlight">신규 가입</span> 시 <span class="keyword-highlight">현금 지원</span>을 많이 주는 <span class="keyword-highlight">업체</span>가 있다면, 해당 <span class="keyword-highlight">업체</span>가 믿을 수 있는 <span class="keyword-highlight">전문 업체</span>인지 <span class="keyword-highlight">순위</span>와 <span class="keyword-highlight">후기</span>를 <span class="keyword-highlight">비교</span>하여 확인하는 것이 중요합니다.</p>
+    </div>
+  </section>
+
+  <section id="external-links" class="content-box">
+    <h2>KT인터넷결합할인 관련 신뢰할 수 있는 외부 사이트</h2>
+    <p>보다 정확하고 공인된 정보를 원하시면 아래 외부 사이트를 참고하십시오. <span class="keyword-highlight">네이버</span>, <span class="keyword-highlight">구글</span>, <span class="keyword-highlight">유튜브</span> 등에서 <span class="keyword-highlight">KT인터넷결합할인</span> 정보를 <span class="keyword-highlight">검색</span>할 때 <span class="keyword-highlight">전문</span> 지식과 공신력을 갖춘 사이트를 활용하면 좋습니다.</p>
+    <ul>
+      <li><a href="https://www.kt.com/" target="_blank" rel="noopener">KT 공식 홈페이지</a> (요금제 및 <span class="keyword-highlight">상품</span> 정보 확인)</li>
+      <li><a href="https://www.kcc.go.kr/" target="_blank" rel="noopener">방송통신위원회 (KCC)</a> (통신 정책 및 규제 정보)</li>
+      <li><a href="https://www.msit.go.kr/" target="_blank" rel="noopener">과학기술정보통신부</a> (ICT 정책 및 <span class="keyword-highlight">기술</span> 정보)</li>
+      <li><a href="https://www.kca.go.kr/" target="_blank" rel="noopener">한국소비자원</a> (통신 서비스 관련 소비자 상담 및 <span class="keyword-highlight">후기</span>)</li>
+      <li><a href="https://namu.wiki/w/KT%EC%9D%B8%ED%84%B0%EB%84%B7" target="_blank" rel="noopener">나무위키 - KT 인터넷</a> (<span class="keyword-highlight">KT 인터넷</span> 관련 <span class="keyword-highlight">정보</span> 및 역사)</li>
+      <li><a href="https://www.ktoa.or.kr/" target="_blank" rel="noopener">한국통신사업자연합회</a> (통신 <span class="keyword-highlight">상품</span> <span class="keyword-highlight">비교</span> <span class="keyword-highlight">정보</span> 제공)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="content-box" aria-label="KT인터넷결합할인 문의 및 상담">
+    <h2>KT인터넷결합할인 문의 및 <span class="keyword-highlight">견적</span> <span class="keyword-highlight">상담</span> 신청</h2>
+    <p>고객님의 <span class="keyword-highlight">KT인터넷결합할인</span> 관련 문의 사항이나 맞춤형 <span class="keyword-highlight">견적</span>을 받고 싶으신가요? 아래 양식을 작성해 주시면 <span class="keyword-highlight">전문</span> 상담사가 고객님의 사용 환경에 맞는 최적의 <span class="keyword-highlight">상품</span>을 <span class="keyword-highlight">추천</span>해 드립니다. <span class="keyword-highlight">현금 지원</span> <span class="keyword-highlight">사은품</span> <span class="keyword-highlight">혜택</span>을 포함한 자세한 <span class="keyword-highlight">가격</span> 정보를 <span class="keyword-highlight">비교</span>하여 안내해 드립니다.</p>
+    <form action="#" method="post" aria-describedby="form-desc">
+      <p id="form-desc">아래 양식을 작성하여 문의주시면 신속하게 답변드리겠습니다.</p>
+      <p>
+        <label for="name">이름 <span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required placeholder="홍길동" aria-required="true" />
+      </p>
+      <p>
+        <label for="phone">연락처 <span aria-hidden="true">*</span></label>
+        <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]{9,13}" aria-required="true" />
+      </p>
+      <p>
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" />
+      </p>
+      <p>
+        <label for="current-provider">현재 사용 통신사</label>
+        <select id="current-provider" name="current-provider">
+          <option value="">선택하세요</option>
+          <option value="kt">KT</option>
+          <option value="skt">SKT</option>
+          <option value="lgu">LG U+</option>
+          <option value="etc">기타/알뜰폰</option>
+        </select>
+      </p>
+      <p>
+        <label for="inquiry-type">문의 유형 <span aria-hidden="true">*</span></label>
+        <select id="inquiry-type" name="inquiry-type" required aria-required="true">
+          <option value="">선택하세요</option>
+          <option value="new-join"><span class="keyword-highlight">신규 가입</span> <span class="keyword-highlight">혜택</span> 문의</option>
+          <option value="bundle-transfer">결합 상품 변경 문의</option>
+          <option value="price-estimate">요금 <span class="keyword-highlight">견적</span> <span class="keyword-highlight">비교</span> 문의</option>
+          <option value="etc">기타 문의</option>
+        </select>
+      </p>
+      <p>
+        <label for="inquiry">문의 내용</label>
+        <textarea id="inquiry" name="inquiry" rows="5" placeholder="가족 구성원 수, 희망 인터넷 속도 등을 자세히 작성해주시면 정확한 상담이 가능합니다. (예: 4인 가족, 500M 인터넷, TV 결합 희망)" aria-label="문의 내용"></textarea>
+      </p>
+      <p>
+        <button type="submit">문의하기</button>
+      </p>
+    </form>
+  </section>
+
+  <!-- Simple JavaScript for FAQ Accordion functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqItems = document.querySelectorAll('.faq .item h3');
+      faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+          const parent = this.parentNode;
+          // Toggle active class on parent element
+          if (parent.classList.contains('active')) {
+            parent.classList.remove('active');
+            parent.querySelector('p').style.display = 'none';
+          } else {
+            // Close other items
+            document.querySelectorAll('.faq .item.active').forEach(activeItem => {
+              activeItem.classList.remove('active');
+              activeItem.querySelector('p').style.display = 'none';
+            });
+            // Open current item
+            parent.classList.add('active');
+            parent.querySelector('p').style.display = 'block';
+          }
+        });
+      });
+    });
+  </script>
+  
